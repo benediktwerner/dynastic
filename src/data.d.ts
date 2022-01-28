@@ -5,7 +5,25 @@
  * and run `./gen-ts.sh` to regenerate this file.
  */
 
+export type Fact =
+  | {
+      Birth: {
+        date: number;
+        [k: string]: unknown;
+      };
+    }
+  | {
+      Death: {
+        date: number;
+        [k: string]: unknown;
+      };
+    }
+  | {
+      Job: string;
+    };
+
 export interface Person {
+  facts: Fact[];
   name: string;
   [k: string]: unknown;
 }

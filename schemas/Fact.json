@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fact",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "Birth"
+      ],
+      "properties": {
+        "Birth": {
+          "type": "object",
+          "required": [
+            "date"
+          ],
+          "properties": {
+            "date": {
+              "type": "integer",
+              "format": "uint32",
+              "minimum": 0.0
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "Death"
+      ],
+      "properties": {
+        "Death": {
+          "type": "object",
+          "required": [
+            "date"
+          ],
+          "properties": {
+            "date": {
+              "type": "integer",
+              "format": "uint32",
+              "minimum": 0.0
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "Job"
+      ],
+      "properties": {
+        "Job": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}
