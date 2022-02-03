@@ -36,3 +36,9 @@ https://codepen.io/nana8/pen/VoXPKQ?editors=1100
 Family Tree Maker: https://www.youtube.com/watch?v=NKOgr0upYUY
 Roots Magic 8
 Legacy 9
+
+## TODO
+
+- Add identifier back (for stuff like family search ids ig)
+- How to handle transcribtions, translations, etc.
+- Adjust attribution (allow list of contributors)

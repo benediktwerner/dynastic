@@ -261,6 +261,8 @@ dependencies = [
  "libc",
  "num-integer",
  "num-traits",
+ "serde",
+ "time",
  "winapi",
 ]
 
@@ -640,6 +642,7 @@ checksum = "ee2626afccd7561a06cf1367e2950c4718ea04565e20fb5029b6c7d8ad09abcf"
 name = "dynastic"
 version = "0.1.0"
 dependencies = [
+ "chrono",
  "schemars",
  "serde",
  "serde_json",
@@ -2216,6 +2219,7 @@ version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d7a48d098c2a7fdf5740b19deb1181b4fb8a9e68e03ae517c14cde04b5725409"
 dependencies = [
+ "chrono",
  "dyn-clone",
  "schemars_derive",
  "serde",
