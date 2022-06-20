@@ -4,6 +4,8 @@ https://blogs.gnome.org/jnelson/2015/01/06/sqlite-vacuum-and-auto_vacuum/
 https://wiki.mozilla.org/Performance/Avoid_SQLite_In_Your_Next_Firefox_Feature
 https://www.sqlite.org/undoredo.html
 https://www.sqlite.org/stricttables.html
+https://www.sqlite.org/errlog.html
+https://www.sqlite.org/limits.html
 
 ```
 pragma application_id = 0x74737964  // "dyst", check when loading
@@ -14,11 +16,12 @@ pragma journal_mode = wal
 pragma synchronous = normal
 pragma trusted_schema = off
 pragma cell_size_check = on
+pragma foreign_keys = on
 
 pragma integrity_check
 pragma quick_check  // like integrity_check but doesn't check UNIQUE and index constraings to run faster
 pragma optimize     // recommended to run before closing the connection
-pragma vacuum
+pragma vacuuma
 ```
 
 https://diesel.rs/guides/getting-started.html
