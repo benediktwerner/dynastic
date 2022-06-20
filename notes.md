@@ -3,6 +3,7 @@
 https://blogs.gnome.org/jnelson/2015/01/06/sqlite-vacuum-and-auto_vacuum/
 https://wiki.mozilla.org/Performance/Avoid_SQLite_In_Your_Next_Firefox_Feature
 https://www.sqlite.org/undoredo.html
+https://www.sqlite.org/stricttables.html
 
 ```
 pragma application_id = 0x74737964  // "dyst", check when loading
